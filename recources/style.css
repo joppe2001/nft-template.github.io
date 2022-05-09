@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+body {
+    font-family: outfit;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+.bigbox {
+    /* border: red solid 1px; */
+    position: relative;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 18px;
+    padding: 29px;
+    width: 370px;
+    height: 600px;
+    box-shadow: 0 0 25px 10px rgb(14, 24, 39);
+}
+
+.main-img {
+    /* position: relative; */
+    /* size: 100%; */
+    opacity: 1;
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    backface-visibility: hidden;
+}
+
+.middle {
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 44%;
+}
+
+.container {
+    position: relative;
+}
+
+.subheading {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    /* font-size: 20px; */
+}
+
+.middle-row {
+    /* border: red solid 1px; */
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.eth-amount {
+    display: flex;
+    color: hsl(178, 100%, 50%);
+}
+
+.eth-amount img {
+    position: relative;
+    width: 12px;
+    height: 22px;
+    top: 18px;
+    padding-right: 8px;
+}
+
+.clock-time {
+    display: flex;
+    color: hsl(215, 51%, 70%);
+}
+
+.clock-time img {
+    position: relative;
+    width: 20px;
+    height: 22px;
+    top: 19px;
+    padding-right: 8px;
+}
+
+.bottom-row {
+    position: relative;
+    display: flex;
+    width: 100%;
+    bottom: 24px;
+}
+
+.bottom-row img {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    top: 8px;
+    padding-right: 10px;
+}
+
+
+/* active states */
+
+.container:hover .main-img {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.container:hover .middle {
+    cursor: pointer;
+    opacity: 1;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+#footer-name:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+@media only screen and (max-width: 375px) {
+    .bigbox {
+        height: 550px;
+    }
+}
